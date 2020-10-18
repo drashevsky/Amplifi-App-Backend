@@ -19,10 +19,11 @@ router.post('/users/login', function(req, res, next) {
     
     if (req.body.username && req.body.password) {
         var inputUsername = mysql.escape(req.body.username);
+        var inputPassword = mysql.escape(req.body.password);
         var query = "SELECT * FROM users WHERE username='" + inputUsername + "';";
         
         sqlQuery(query).then((result) => {    
-            if (result[0] && bcrypt.compareSync(req.body.password, result[0].password)) {
+            if (result[0] && bcrypt.compareSync(inputPassword, result[0].password)) {
                 req.session.username = result[0].username;
                 res.json({success: true});
             } else {
@@ -57,7 +58,7 @@ router.post('/users/createAccount', function(req, res, next) {
     if (req.body.username && req.body.password) {
         var inputUsername = mysql.escape(req.body.username);
         var inputPassword = mysql.escape(req.body.password);
-        var query = "INSERT INTO users VALUES ('" + inputUsername + "', '" + inputPassword + "', '', '');";
+        var query = "INSERT INTO users VALUES ('" + inputUsername + "', '" + bcrypt.hashSync(inputPassword) + "', '', '');";
         
         if (inputUsername.length > 0 && inputUsername.length <= 64 && inputUsername.value.match(/^[A-Za-z0-9]+$/)) {
             sqlQuery(query).then((result) => {    
