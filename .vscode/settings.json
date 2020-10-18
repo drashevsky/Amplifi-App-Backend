@@ -2,5 +2,20 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "db-mysql-sfo2-09381-do-user-8187837-0.b.db.ondigitalocean.com",
+            "port": 25060,
+            "driver": "MySQL",
+            "name": "Amplifi-db",
+            "database": "defaultdb",
+            "username": "doadmin",
+            "password": "rmp9nr9fvk9iswhn"
+        }
     ]
 }
