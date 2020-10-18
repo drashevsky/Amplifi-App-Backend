@@ -5,8 +5,8 @@ var bcrypt = require('bcrypt-nodejs');
 
 var pool = mysql.createPool({
     host: 'amplifi-app-db.database.windows.net',
-    user: 'amplifi',
-    password: 'iHateAzure1',
+    user: 'ApiLogin',
+    password: 'EpicLogin#2#',
     database: 'amplifi-app-db'
 });
    

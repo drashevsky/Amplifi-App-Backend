@@ -1,0 +1,1 @@
+CREATE LOGIN ApiLogin WITH PASSWORD = 'EpicLogin#2#'
