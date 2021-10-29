@@ -1,5 +1,7 @@
 ## Built for Dubhacks 2020
 
+![Screenshot of Amplifi](amplifi_screenshot.jpg)
+
 ## Inspiration
 
 We were inspired by connecting musicians to their fans during this pandemic - bringing the scene out to everybody, everywhere.
