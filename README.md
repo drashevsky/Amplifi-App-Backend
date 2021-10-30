@@ -22,7 +22,7 @@ Built a front-end react app with a back-end in node.js, hosted on digitalocean.
 
 ## Challenges we ran into
 
-We initially tried to use azure for hosting, spent several hours on it, and were forced to pivot to digitalocean.
+We initially tried to use Azure for hosting, spent several hours on it, and were forced to pivot to DigitalOcean.
 
 ## Accomplishments that we're proud of
 
